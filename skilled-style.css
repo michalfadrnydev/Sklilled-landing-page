@@ -1,0 +1,143 @@
+:root {
+    /*FONT-SIZE*/
+    /*header*/
+    --fs-h-xl: 56px;
+    --fs-h-l: 40px;
+    --fs-h-m: 32px;
+    --fs-h-s: 24px;
+    /*body*/
+    --fs-b-m: 18px;
+    --fs-b-s: 16px;
+    /*font-weight*/
+    --fw-e-b: 800;
+    --fw-b: 700;
+    --fw-m: 500;
+
+    /*FONT-FAMILY*/
+    --ff: 'Plus Jakarta Sans', sans-serif;
+
+    /*LINE-HEIGHT*/
+    /*header*/
+    --lh-xl: 70px;
+    --lh-l: 51px;
+    --lh-m: 40px;
+    --lh-s: 28px;
+    /*body*/
+    --lh-b-m: 28px;
+    --lh-b-s: 26px;
+
+    /*COLORS*/
+    /*plain*/
+    --violet: #666CA3;
+    --dark-blue: #13183F;
+    --grey: #83869A;
+    --dark-pink: #F74780;
+    --light-pink: #FFA7C3;
+    --white: #FFFFFF;
+
+    /*Gradients*/
+    --grad-o-p: linear-gradient(#F02AA6, #FF6F48);
+    --grad-b-p: linear-gradient(#4851FF, #F02AA6);
+
+    /*buttons-border-radius*/
+    --br: 2rem;
+}
+
+html {
+    font-family: var(--ff);
+}
+
+body{
+    margin: 25px 5%;
+}
+
+button {
+    background-color: var(--dark-blue);
+    border: none;
+    border-radius: var(--br);
+    color: var(--white);
+    display: inline-block;
+    font-family: var(--ff);
+    font-size: var(--fs-b-s);
+    font-weight: var(--fw-b);
+    height: 50px;
+    padding: 0;
+    width: 140px;
+}
+
+
+/* ----------------------------------------------Horní lišta*/
+nav {
+    height: 50px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    vertical-align: middle;
+}
+
+.nav-button {
+    position: absolute;
+    right: 0;
+}
+
+.nav-button:hover {
+    background-color: var(--violet);
+}
+
+
+/* -------------------------------------------------Hlavní text*/
+
+.main-text-panel {
+    width: 100%;
+}
+
+h1 {
+    color: var(--dark-blue);
+    font-size: var(--fs-h-l);
+    font-weight: var(--fw-e-b);
+    margin:0;
+}
+
+.nowrap {
+    display: block;
+    white-space: nowrap;
+}
+
+p {
+    color: var(--grey);
+    font-size: var(--fs-b-s);
+    max-width: 450px;
+}
+
+/* -------------------------------------------------Responzivita*/
+/*2 položky na řádku*/
+
+@media (min-width: 768px){
+    .main-text-panel {
+        width: 60%;
+    }
+
+    p {
+        font-size: var(--fs-b-m);
+        margin:0;
+        width:85%
+    }
+}
+
+/*3 položky na řádku*/
+@media (min-width: 992px){
+    .main-text-panel h1 {
+        font-size: var(--fs-h-xl);
+    }
+
+    p {
+        font-size: var(--fs-b-m);
+    }
+
+}
