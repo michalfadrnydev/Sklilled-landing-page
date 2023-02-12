@@ -97,7 +97,7 @@ nav {
     width: 100%;
 }
 
-h1 {
+.main-text-panel h1 {
     color: var(--dark-blue);
     line-height: (--lh-xl);
     font-size: var(--fs-h-l);
@@ -115,24 +115,44 @@ p {
     line-height: var(--lh-b-m);
     font-size: var(--fs-b-s);
     max-width: 450px;
-    margin: 0 0 20px 0;
+    margin: 0 0 25px 0;
 }
 
 .main-text-button {
-    background: linear-gradient(#F02AA6, #FF6F48);
-    width: 167px;
+    background: linear-gradient(#FF6F48,#F02AA6);
     height: 56px;
+    width: 167px;
+}
+
+.main-text-button:hover {
+    opacity: 0.5;
 }
 
 
 /* -------------------------------------------------Hero container*/
 
 .hero-container {
-    background-color: #white;
+    background-color: rgb(255, 255, 255);
     height: 300px;
     position: relative;
     margin: 50px 0;
     width: 100%;
+}
+
+.hero-container h1 {
+    display: inline-block;
+    font-size: var(--fs-h-m);
+    font-weight: var(--fw-e-b);
+    line-height: var(--lh-m);
+    margin: 0;
+}
+
+.hero-container span {
+    color:#666CA3;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: var(--fw-b);
+    line-height: var(--lh-b-m);
 }
 
 .layer-top-upright {
@@ -140,35 +160,45 @@ p {
     border-radius: 1rem;
     box-shadow: 0 15px 25px rgb(128, 128, 128);
     display: inline-block;
-    height: 105px;
+    height: 75px;
     position: absolute;
     top: 0;
+    padding: 15px 25px;
     right: 0;
-    width: 100px;
+    width: 65px;
+    z-index: 1;
 }
 
 .layer-top-bottom-left {
     background-color: white;
+    bottom: 0;
     border-radius: 1rem;
     box-shadow: 0 15px 25px rgb(128, 128, 128);
     display: inline-block;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
+    height: 70px;
     left: 0;
-    width: 155px;
+    padding: 15px 25px;
+    position: absolute;
+    width: 105px;
+    z-index: 1;
 }
 
 .layer-bottom-hero {
     background: linear-gradient(#F02AA6, #FF6F48);
     border-radius: 50%;
     height: 253px;
+    left: 50%;
     margin: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 253px;
 }
 
 #image-hero {
-    overflow: hidden;
+    display: block;
+    transform: translate(0, 20px);
     width: 100%;
 }
 
@@ -183,7 +213,7 @@ p {
 
     p {
         font-size: var(--fs-b-m);
-        margin:0;
+        margin:0; /* !!! */
         width:85%
     }
 }
