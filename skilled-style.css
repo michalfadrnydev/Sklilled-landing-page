@@ -5,6 +5,7 @@
     --fs-h-l: 40px;
     --fs-h-m: 32px;
     --fs-h-s: 24px;
+    --fs-h-xs: 20px;
     /*body*/
     --fs-b-m: 18px;
     --fs-b-s: 16px;
@@ -45,10 +46,11 @@
 
 html {
     font-family: var(--ff);
+    background: linear-gradient(white,#F0F1FF);;
 }
 
 body{
-    margin: 25px 5%;
+    margin: 25px 5% 0 5%;
 }
 
 button {
@@ -125,14 +127,14 @@ p {
 }
 
 .main-text-button:hover {
-    opacity: 0.5;
+    background: linear-gradient(#FFB7A4, #F895D3);
+    color: white;
 }
 
 
 /* -------------------------------------------------Hero container*/
 
 .hero-container {
-    background-color: rgb(255, 255, 255);
     height: 300px;
     position: relative;
     margin: 50px 0;
@@ -200,6 +202,115 @@ p {
     display: block;
     transform: translate(0, 20px);
     width: 100%;
+}
+
+/* -------------------------------------------------Courses container LAYOUT*/
+.courses {
+    display: flex;
+    flex-direction: column;
+}
+
+.courses-cont {
+    box-shadow: 0 15px 25px #F0F1FF;
+    position: relative;
+    margin: 15px 0;
+}
+
+
+/* -------------------------------------------------Courses container TEXT*/
+
+.courses-cont-text {
+    background-color: var(--white);
+    border-radius: 1rem;
+    height: 220px;
+    margin-top: 25px;
+    padding: 30px;
+}
+
+.courses-cont-text h3 {
+    margin: 40px 0 0 0;
+
+    font-size: var(--fs-h-xs);
+    font-weight: var(--fw-e-b);
+}
+
+.courses-cont-text p {
+    margin: 20px 0 20px 0;
+    line-height: var(--lh-b-s);
+    font-size: var(--fs-b-s);
+    font-weight: var(--fw-m);
+    width: 95%;
+}
+
+.courses-cont-text h4 {
+    color: var(--dark-pink);
+    margin: 0;
+    font-size: 18px;
+    font-weight: var(--fw-e-b);
+    width: 95%;
+}
+
+
+.courses-cont-text:nth-of-type(1) h3 {
+    color: var(--white);
+    font-size: var(--fs-h-s);
+    line-height: var(--lh-s);
+    margin: 0;
+}
+
+.courses-cont-text:nth-of-type(1) {
+    background: linear-gradient(#F02AA6, #FF6F48);
+    color: var(--white);
+    height: 60px;
+}
+/* -------------------------------------------------Courses container ICONS*/
+
+.courses-cont-ico {
+    background: linear-gradient(#F02AA6, #FF6F48);
+    border-radius: 50%;
+    left: 25px;
+    position: absolute;
+    height: 56px;
+    width: 56px;
+}
+
+.courses-cont-ico img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    width: 40%;
+}
+
+/* ------------------------------------------------------------------Footer*/
+
+footer {
+    background-color: var(--dark-blue);
+    height: 120px;
+    margin-top: 40px;
+    margin-left: -50px;
+    margin-right: -50px;
+    position: relative;
+}
+
+.footer-button {
+    background: linear-gradient(#4851FF, #F02AA6);
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.footer-logo {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.footer-button:hover {
+    background: linear-gradient(#C1A2EF, #F895D3);
 }
 
 
