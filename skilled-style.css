@@ -165,7 +165,7 @@ p {
 .layer-top-upright {
     background-color: white;
     border-radius: 1rem;
-    box-shadow: 0 15px 25px rgb(128, 128, 128);
+    box-shadow: 0 15px 30px 1px #4851FF;
     display: inline-block;
     height: 75px;
     position: absolute;
@@ -180,7 +180,7 @@ p {
     background-color: white;
     bottom: 0;
     border-radius: 1rem;
-    box-shadow: 0 15px 25px rgb(128, 128, 128);
+    box-shadow: 0 15px 30px 1px #C1A2EF;
     display: inline-block;
     height: 70px;
     left: 0;
@@ -331,7 +331,7 @@ footer {
     }
 
     .main-text-panel h1 {
-        color: red;
+        color: #13183F;
     }
 
     p {
@@ -353,6 +353,16 @@ footer {
 
     #image-hero {
         position: absolute;
+    }
+
+    .layer-bottom-rotated-rectangle {
+        background: linear-gradient(#4851FF, #F02AA6);
+        border-radius: 8rem;
+        height: 800px;
+        position: absolute;
+        transform: translate(320px,-335px) rotate(45deg);
+        width: 200px;
+        z-index: -1;
     }
 
     /* -----------------------Courses container*/
