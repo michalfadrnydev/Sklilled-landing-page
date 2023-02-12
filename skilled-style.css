@@ -49,8 +49,12 @@ html {
     background: linear-gradient(white,#F0F1FF);;
 }
 
-body{
+main{
     margin: 25px 5% 0 5%;
+}
+
+body {
+    margin: 0;
 }
 
 button {
@@ -134,14 +138,15 @@ p {
 
 /* -------------------------------------------------Hero container*/
 
-.hero-container {
+.hero-panel {
     height: 300px;
     position: relative;
-    margin: 50px 0;
+    margin: 40px auto;
     width: 100%;
+    max-width: 400px;
 }
 
-.hero-container h1 {
+.hero-panel h1 {
     display: inline-block;
     font-size: var(--fs-h-m);
     font-weight: var(--fw-e-b);
@@ -149,7 +154,7 @@ p {
     margin: 0;
 }
 
-.hero-container span {
+.hero-panel span {
     color:#666CA3;
     display: inline-block;
     font-size: 14px;
@@ -289,8 +294,8 @@ footer {
     background-color: var(--dark-blue);
     height: 120px;
     margin-top: 40px;
-    margin-left: -50px;
-    margin-right: -50px;
+    margin-left: -5px;
+    margin-right: -5px;
     position: relative;
 }
 
@@ -318,17 +323,64 @@ footer {
 /*2 položky na řádku*/
 
 @media (min-width: 768px){
-    .main-text-panel {
-        width: 60%;
+
+    /* -----------------------Text container*/
+    .top-panel {
+        display: flex;
+        margin: 40px 0;
+    }
+
+    .main-text-panel h1 {
+        color: red;
     }
 
     p {
         font-size: var(--fs-b-m);
-        margin:0; /* !!! */
         width:85%
     }
+
+    /* -----------------------Hero container*/
+    .hero-panel {
+        height: 380px;
+        margin: 0 auto;
+    }
+
+    .layer-bottom-hero {
+        border-radius: 8rem;
+        width: 216px;
+        height: 380px;
+    }
+
+    #image-hero {
+        position: absolute;
+    }
+
+    /* -----------------------Courses container*/
+    .courses {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .courses > * {
+        flex-basis: 48%;
+    }
+
+    #image-hero {
+        position: absolute;
+        transform: scale(1.1) translate(0, 65px);
+        width: 100%;
+    }
+
+    .courses-cont-text:nth-of-type(1) {
+        height: 150px;
+        padding: 65px 30px;
+    }
+
 }
 
+/* -------------------------------------------------Responzivita*/
 /*3 položky na řádku*/
 @media (min-width: 992px){
     .main-text-panel h1 {
@@ -338,5 +390,8 @@ footer {
     p {
         font-size: var(--fs-b-m);
     }
-
+    
+    .courses > * {
+        flex-basis: 31%;
+    }
 }
