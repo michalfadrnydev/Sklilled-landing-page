@@ -99,9 +99,10 @@ nav {
 
 h1 {
     color: var(--dark-blue);
+    line-height: (--lh-xl);
     font-size: var(--fs-h-l);
     font-weight: var(--fw-e-b);
-    margin:0;
+    margin: 30px 0;
 }
 
 .nowrap {
@@ -111,9 +112,66 @@ h1 {
 
 p {
     color: var(--grey);
+    line-height: var(--lh-b-m);
     font-size: var(--fs-b-s);
     max-width: 450px;
+    margin: 0 0 20px 0;
 }
+
+.main-text-button {
+    background: linear-gradient(#F02AA6, #FF6F48);
+    width: 167px;
+    height: 56px;
+}
+
+
+/* -------------------------------------------------Hero container*/
+
+.hero-container {
+    background-color: #white;
+    height: 300px;
+    position: relative;
+    margin: 50px 0;
+    width: 100%;
+}
+
+.layer-top-upright {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 15px 25px rgb(128, 128, 128);
+    display: inline-block;
+    height: 105px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+}
+
+.layer-top-bottom-left {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 15px 25px rgb(128, 128, 128);
+    display: inline-block;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 155px;
+}
+
+.layer-bottom-hero {
+    background: linear-gradient(#F02AA6, #FF6F48);
+    border-radius: 50%;
+    height: 253px;
+    margin: auto;
+    width: 253px;
+}
+
+#image-hero {
+    overflow: hidden;
+    width: 100%;
+}
+
 
 /* -------------------------------------------------Responzivita*/
 /*2 položky na řádku*/
